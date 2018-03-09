@@ -32,5 +32,10 @@ function request() {
         console.log(err);
     })
 
-
+    //5、取消网络请求(所有的请求方法均返回requestTask对象，可中断请求任务)
+    var requestTask = dev_request.Get('/classify', function (res) {
+        console.log(res);
+    });
+    //网络请求取消
+    requestTask.abort()
 }
