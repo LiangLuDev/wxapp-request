@@ -24,7 +24,7 @@ function request(url, method, data, success, fail) {
             console.log("传递参数类型不正确");
         }
 
-    } 
+    }
 
     var wxtask = wx.request({
         url: BASE_URL + url,
